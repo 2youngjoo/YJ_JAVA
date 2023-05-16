@@ -16,7 +16,7 @@ public class MainClass11 {
 	
 	public static void delete(int num) {
 		// 인자로 전달된 num에 해당하는 회원 정보를 삭제하는 기능을 완성하기
-		// DBConnect 클래슬 활용하세요
+		// DBConnect 클래스를 활용하세요
 		Connection conn=null;
         PreparedStatement pstmt=null;
         try {

@@ -28,7 +28,7 @@ public class MemberDao {
 			// 실행할 sql문
 			String sql="INSERT INTO member"
 					+  " (num, name, addr)"
-					+  " VALUES(member_seq,NEXTVAL, ?, ?)";		
+					+  " VALUES(member_seq.NEXTVAL, ?, ?)";		
 			// sql 문을 대신 실행해줄 PreparedStatement 객체의 참조 값 얻어오기
 			pstmt=conn.prepareCall(sql);
 			// sql 문이 ?가 존재하는 미완성이라면 여기서 완성한다.

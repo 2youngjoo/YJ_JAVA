@@ -14,7 +14,11 @@ public class MainClass12 {
 		dto.setName(name);
 		dto.setAddr(addt);
 		
-		//DB에 저장하기
+		// DB에 저장하기
 		new MemberDao().insert(dto);
+		
+		// DB에 저장된 Data 삭제하기
+		int num=7;
+		
 	}
 }
